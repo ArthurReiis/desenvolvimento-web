@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --bg-color : rgb(53, 86, 185);
+    --primary-color : red;
+    --secundary-color :blue;
+    --optional-color : green;
+
+    --box-width: 150px;
+    --box-height: 150px;
+    --box-radius: 80px;
+
+    --text-color: white;
+    --text-front-size: 1.5rem;
+}
+.container{
+    background-color: var(--bg-color);
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.box1,
+.box2,
+.box3{
+    height: var(--box-height);
+    width: var(--box-width);
+    border-radius: var(--box-radius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+    font-size: var(--text-front-size);
+}
+.box1{
+    background-color : var(--primary-color);
+}
+.box2{
+    background-color: var(--secundary-color);
+}
+.box3{
+    background-color: var(--optional-color);
+}
